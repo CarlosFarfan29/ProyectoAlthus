@@ -1,0 +1,475 @@
+body{
+    background: #282927;
+}
+  
+a:hover{
+    text-decoration: none;
+}
+
+/* Header */
+#header a img{
+    width: 9.2rem;
+}
+
+header .banner{
+    background-image: url(../img/proyecto-fondo-1.png);
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+header .man-banner{
+    background-image: url(../img/Home-hombre-1.png);
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+header .text-banner{
+    text-transform: uppercase;
+    font-size: 72px;
+    color: #5819DC;
+    line-height: 1.1;
+    padding-top: 15px;
+    font-weight: 600;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: -5px;
+}
+
+header .text-banner span{
+    display: block;
+    color: #282927;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+main .title{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: -3px;
+}
+
+main nav a{
+    font-size: 2.4em;
+    color: #5819dc;
+    text-align: center;
+    margin: 0 10px;
+    line-height: 1.2;
+    letter-spacing: -3px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+main nav a:hover{
+    color: #fff;
+}
+
+main nav a:nth-child(1){
+    color: #fff;
+}
+
+main .img-galery{
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 445px;
+    cursor: pointer;
+}
+
+main .img-galery img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: .5s all ease; 
+}
+
+main .img-galery:hover > .card-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+main .img-galery:hover > img{
+    filter: grayscale(0%);
+    transform: scale(1.15);
+}
+
+main .img-galery .card-text{
+    background-color: rgba(0,0,0,.87);
+    width: 100%;
+    bottom: 0%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    padding: 5px 12px;
+}
+
+main .card-description{
+    padding: 0;
+}
+
+main .card-description .name{
+    color: #fff;
+    font-size: 1.9em;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.4;
+    margin-top: 7px;
+    font-weight: bold;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+main .card-description .category{
+    font-size: .92em;
+    letter-spacing: -1px;
+    color: #5819DC;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+main .card-text a{
+    top: 1em;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+main .card-text i{
+    color: #5819dc;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+footer{
+    border-top: 1px solid rgba(255,255,255,0.39);
+}
+
+footer .text-footer{
+    padding: 27px 0;
+}
+
+footer .text-footer p{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    letter-spacing: 0px;
+}
+
+footer a{
+    position: fixed;
+    bottom: 120px;
+    right: 0;
+    background-color: rgba(41, 41, 41, 0.5);
+    height: 38px;
+    width: 38px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    text-decoration: none;
+}
+
+footer a i{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.toggler {
+    position: fixed;
+    display: block;
+    height: 30px;
+    width: 40px;
+    top: 75px;
+    right: 50px;
+    z-index: 999999;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger{
+    position: fixed;
+    right: 40px;
+    top: 60px;
+    height: 60px;
+    width: 60px;
+    padding: 0rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger > div{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    width: 60%;
+    transition: all  0.4s ease;
+}
+
+.hamburger > div::before,
+.hamburger > div::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 2px;
+    transition: all  0.4s ease;
+}
+
+.hamburger > div::after{
+    top: 10px;
+}
+
+.toggler:checked + .hamburger > div{
+    background: rgba(0,0,0,0);
+}
+
+.toggler:checked + .hamburger > div::before{
+    top: 0;
+    transform: rotate(45deg);
+    background: rgb(255, 255, 255);
+}
+
+.toggler:checked + .hamburger > div::after{
+    top: 0;
+    transform: rotate(135deg);
+    background: rgb(255, 255, 255);
+}
+
+.menu{
+    background: rgb(0, 0, 0, 0.9);
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    right: 0px;
+    z-index: 9998;
+    transition: all 0.4s ease;
+}
+
+.toggler:checked ~ .menu{
+    width: 38%;
+}
+
+.menu >  div > ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    padding-left: 30px;
+    line-height: 4rem;
+    visibility: hidden;
+}
+
+.menu > div > ul > li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.menu > div > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: -4px;
+}
+
+.toggler:checked ~ .menu > div > ul{
+    transition: visibility 0.4s ease;
+    transition-delay: 0.1s;
+    visibility: visible;
+}
+
+.toggler:checked ~ .menu > div > ul > li > a:hover{
+    color:#6612E2;
+}
+
+/* Redes-Sociales */
+
+.redes-sociales{
+    position: fixed;
+    top: 150px;
+    right: 55px;
+    z-index: 99999;
+}
+
+.redes-sociales ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: .5rem 0;
+}
+
+.redes-sociales ul li a i{
+    color: white;
+    font-size: 1.8rem;
+    transition: all .25s ease-in;
+}
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+    transition: all .25s ease-out;
+}
+
+.fa-instagram:hover{
+    color: #df3db6;
+}
+
+.fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+
+/* emociones */
+.imagen-emociones{
+    position: fixed;
+    top: 42px;
+    right: 23px;
+    z-index: 9999;
+}
+
+.imagen-emociones img{
+    width: 6rem;
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}}
+
+.imagen-emociones{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 7s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@media screen and (max-width: 991px){
+header .text-banner{
+    font-size: 60px;
+    margin: 0;
+}
+}
+
+/* DISPOSITIVO MD */
+@media screen and (max-width: 767px){
+    main nav a{
+        font-size: 35px; 
+        letter-spacing: -2px;
+    }
+
+    header .man-banner{
+        background-size: cover;
+    }
+
+    main nav{
+        justify-content: center;
+    }
+
+    header .text-banner{
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .toggler:checked ~ .menu{
+        width: 100%;
+    }
+
+    .menu{
+        height: 110vh;
+    }
+
+    main .title{
+        font-size: 60px;
+    }
+}
+
+
+/* DISPOSITIVO MD */
+@media (max-width: 768px){
+    header .imagen-emociones img{
+        width: 4rem;
+    }
+    header .hamburger{
+        width: 30px;
+        height: 30px;
+    }
+    header .toggler{
+        height: 30px;
+        width: 22px;
+        top: 58px;
+        right: 45px; 
+    }
+    header .redes-sociales{
+        right: 45px;
+    }
+    header .redes-sociales ul li a i{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px){
+    header .text-banner{
+        font-size: 33px;
+        letter-spacing: -3px;
+    }
+
+    main .title{
+        font-size: 48px;
+    }
+
+    main nav a{
+        font-size: 30px; 
+        letter-spacing: -1px;
+    }
+
+    footer .text-footer p{
+        font-size: 14px;
+    }
+    header .toggler{
+        height: 25px;
+        width: 20px;
+        top: 50px;
+        right: 38px; 
+    }
+}
+
+@media (max-width: 400px){
+    header .menu >  div > ul{
+        top: 60px;
+        padding-left: 30px;
+    }
+    header .imagen-emociones img{
+        width: 3rem;
+    }
+    header .hamburger{
+        width: 30px;
+        height: 10px;
+        right: 32px;
+    }
+    header .hamburger > div::before,
+    header .hamburger > div::after{
+        top: -7px;
+    }
+
+    header .hamburger > div::after{
+        top: 7px;
+    }
+    header .redes-sociales{
+        right: 40px;
+        top: 100px;
+    }
+    header .redes-sociales ul li a i{
+        font-size: 1rem;
+    }
+}

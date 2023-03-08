@@ -1,0 +1,1015 @@
+@import url(//db.onlinewebfonts.com/c/1770f2701d6a1869d956cd8eeda33a7d?family=Morganite);
+@import url(//db.onlinewebfonts.com/c/d1621c0a2695c84cf82717e2e4de78c3?family=Helvetica+LT+Std);
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+#header{
+    width: 100%;
+    height: auto;
+}
+
+#header a img{
+    width: 9.2rem;
+}
+
+#hero{
+    background-image: url(../img/banner_record.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hamburguer-redes{
+    position: relative;
+    align-items: end;
+    width: 30%;
+}
+
+.hamburguer-redes .emociones{
+    align-items: end;
+    justify-content: end;
+}
+
+.hamburguer-redes .emociones img{
+    width: 20%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev{
+    margin-left: 2rem;
+    color: white;
+}
+
+.swiper-button-next{
+    margin-right: 2rem;
+    color: white;
+}
+
+.swiper-pagination{
+    margin-bottom: 1.5rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+/* Section-1 */
+.section-1{
+    background-image: url(../img/fondo-althus-meta.jpg);
+    height: 969px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.section-1 .title .texto-white{
+    color: white;
+    word-wrap: break-word;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: -7px;
+}
+
+.section-1 .title .texto-white h2{
+    font-size: 6rem;
+}
+
+.section-1 .title .texto-red{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    font-family: 'Fjalla One', sans-serif;
+    padding-bottom: 2rem;
+}
+
+.section-1 .title .texto-red img{
+    width: 4rem;
+}
+
+.section-1 .title .texto-red h2{
+    color: #FF4E3A;
+    font-size: 6rem;
+    letter-spacing: -7px;
+}
+
+.section-1 .title .concept{
+    width: 38%;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+}
+
+.section-1 .title .concept p{
+    color: white;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+/* SERVICIOS */
+
+.servicios{
+    padding: 50px 0;
+}
+
+.servicios .header{
+    display: flex;
+    padding: 2rem 3rem;
+}
+
+.titulo-services{
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.titulo-services h2{
+    font-size: 6rem;
+    text-align: end;
+    line-height: 7rem;
+    letter-spacing: -7px;
+}
+
+.titulo-services h2 span{
+    color: #6612E2;
+}
+
+.parrafo-services p{
+    color: #7a7a7a;
+    width: 90%;
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    margin-right: 5rem;
+    line-height : 2rem;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -2px;
+}
+
+.servicios .post-header .col-md-12{
+    padding: 2rem 2.5rem;
+}
+
+.row .estrategia::before,
+.row .diseño::before,
+.row .markdigital::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 90%;
+    left: 5%;
+    right: 2%;
+    top: 98%;
+    background-color: #6714e2;
+}
+
+.titulo-estrategia img,
+.titulo-diseño img,
+.titulo-markdigital img{
+    width: 3.5rem;
+}
+
+.titulo-estrategia h3,
+.titulo-diseño h3,
+.titulo-markdigital h3{
+    font-size: 5rem;
+    letter-spacing: -5px;
+    margin-left: .7rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.titulo-markdigital h3{
+    line-height: 7rem;
+}
+
+.concept-estrategia p,
+.concept-diseño p,
+.concept-markdigital p{
+    font-size: 1.6rem;
+    color: #666666;
+    margin: 0 4rem;
+    font-family: 'Nunito', sans-serif;
+    line-height: 2.2rem;
+    letter-spacing: -1px;
+}
+
+/* Footer */
+
+.footer-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.footer-services img{
+    width: 60%;
+}
+
+/* COMERCIALES */
+.comerciales{
+    background-color: #6612e2;
+}
+
+.comerciales .title-comerciales .col-10 h3{
+    font-size: 5.2rem;
+    margin: 5rem 0 0rem 7rem;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 7rem;
+    letter-spacing: -5px;
+}
+
+.comerciales .title-comerciales .col-12{
+    padding-left: 10rem;
+}
+
+.comerciales .title-comerciales .col-12 img{
+    width: 3.5rem;
+    margin-right: 1rem;
+}
+
+.comerciales .title-comerciales .col-12 h3{
+    font-size: 5.4rem;
+    letter-spacing: -7px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.img-comerciales{
+    width: 90%;
+}
+
+.img-comerciales .row{
+    padding: 2rem 0 5rem;
+}
+
+.card-01{
+    background-color: #FF4F39;
+    padding: 1.8rem;
+}
+
+.card-01 .concept-com,
+.card-03 .concept-com{
+    color: white;
+}
+
+.card-01 .concept-com h4,
+.card-02 .concept-com h4,
+.card-03 .concept-com h4{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 1.2rem 0;
+    letter-spacing: -2px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.card-01 .concept-com p,
+.card-02 .concept-com p,
+.card-03 .concept-com p{
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.card-01 .concept-com .leer-mas a,
+.card-03 .concept-com .leer-mas a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-01 .concept-com .leer-mas a img,
+.card-02 .concept-com .leer-mas a img,
+.card-03 .concept-com .leer-mas a img{
+    width: 5%;
+}
+
+.card-02{
+    background-color: white;
+    padding: 1.8rem;
+}
+
+.card-02 .concept-com .leer-mas a{
+    text-decoration: none;
+    color: #6612e2;
+}
+
+.card-03{
+    background-color: #232422;
+    padding: 1.8rem;
+}
+
+/* CONTACTO */
+
+.contacto{
+    background-color: #232422;
+    color: white;
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.contacto .contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .contactanos .col-12 h3{
+    font-size: 6rem;
+    letter-spacing: -6px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.contacto .contactanos .col-12 .row{
+    border: 1px solid white;
+    padding: 1rem 0rem;
+    width: 80%;
+}
+
+.row form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    margin-left: 2rem;
+    border-left: 2px solid #6612E2;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.row form label{
+    padding: 0 3rem 0 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+input[type='email']{
+    padding: 5px 50px 5px 10px;
+    background-color: #232422;
+    border-bottom: 1px solid gray;
+    color: white;
+    width: 100%;
+    margin-right: 6rem;
+}
+
+.row form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232422;
+    color: #6612E2;
+    padding: 0 1rem;
+    transition: all .25s ease-out;
+}
+
+.row form button p{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.row form button img{
+    margin-left: 1rem;
+    font-size: .5rem;
+    width: 2.4rem;
+}
+
+.row form button:hover{
+    background-color: white;
+    transition: all .25s ease-out;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #232422;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer .derechos-reserv{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -.5px;
+    padding: 1.5rem 0 0rem 0;
+    border-top: 1px solid white;
+}
+
+.footer a{
+    position: fixed;
+    bottom: 120px;
+    right: 0;
+    background-color: rgba(41, 41, 41, 0.5);
+    height: 38px;
+    width: 38px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    text-decoration: none;
+}
+
+.footer a i{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* HAMBURGUER */
+.toggler {
+    position: fixed;
+    display: block;
+    height: 30px;
+    width: 40px;
+    top: 75px;
+    right: 50px;
+    z-index: 999999;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger{
+    position: fixed;
+    right: 40px;
+    top: 60px;
+    height: 60px;
+    width: 60px;
+    padding: 0rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.hamburger > div{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    width: 60%;
+    transition: all  0.4s ease;
+}
+  
+.hamburger > div::before,
+.hamburger > div::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 2px;
+    transition: all  0.4s ease;
+}
+
+.hamburger > div::after{
+    top: 10px;
+}
+
+.toggler:checked + .hamburger > div{
+    background: rgba(0,0,0,0);
+}
+
+.toggler:checked + .hamburger > div::before{
+    top: 0;
+    transform: rotate(45deg);
+    background: rgb(255, 255, 255);
+}
+
+.toggler:checked + .hamburger > div::after{
+    top: 0;
+    transform: rotate(135deg);
+    background: rgb(255, 255, 255);
+}
+
+.menu{
+    background: rgb(0, 0, 0, 0.9);
+    width: 0%;
+    height: 150vh;
+    position: fixed;
+    right: 0px;
+    z-index: 9998;
+    transition: all 0.4s ease;
+}
+
+.toggler:checked ~ .menu{
+    width: 38%;
+}
+
+.menu >  div > ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    padding-left: 30px;
+    line-height: 4rem;
+    visibility: hidden;
+}
+
+.menu > div > ul > li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.menu > div > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: -4px;
+}
+
+.toggler:checked ~ .menu > div > ul{
+    transition: visibility 0.4s ease;
+    transition-delay: 0.1s;
+    visibility: visible;
+}
+
+.toggler:checked ~ .menu > div > ul > li > a:hover{
+    color: #6612E2;
+}
+
+/* Redes-Sociales */
+
+.redes-sociales{
+    position: fixed;
+    top: 150px;
+    right: 55px;
+    z-index: 99999;
+}
+
+.redes-sociales ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: .5rem 0;
+}
+
+.redes-sociales ul li a i{
+    color: white;
+    font-size: 1.8rem;
+    transition: all .25s ease-in;
+}
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+    transition: all .25s ease-out;
+}
+
+.fa-instagram:hover{
+    color: #df3db6;
+}
+
+.fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+
+/* emociones */
+.imagen-emociones{
+    position: fixed;
+    top: 42px;
+    right: 23px;
+    z-index: 9999;
+}
+
+.imagen-emociones img{
+    width: 6rem;
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
+.imagen-emociones{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 7s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+
+/* Responsive */
+
+@media (max-width: 992px){
+    .section-1 .title .texto-white h2{
+        font-size: 4rem;
+        letter-spacing: -5px;
+    }
+    .section-1 .title .texto-red h2{
+        font-size: 4rem;
+        letter-spacing: -5px;
+    }
+    .section-1 .title .texto-red img{
+        width: 3rem;
+    }
+    .section-1 .title .concept{
+        width: 45%;
+    }
+    .section-1 .title .concept p{
+        font-size: 1.2rem;
+    }
+    .titulo-services h2{
+        font-size: 5.5rem;
+        text-align: end;
+        line-height: 5rem;
+        letter-spacing: -8px;
+    }
+    .parrafo-services p{
+        width: 90%;
+        font-size: 1.4rem;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
+    }
+
+    .titulo-estrategia img,
+    .titulo-diseño img,
+    .titulo-markdigital img{
+        width: 3rem;
+    }
+
+    .titulo-estrategia h3,
+    .titulo-diseño h3,
+    .titulo-markdigital h3{
+        font-size: 4.5rem;
+        letter-spacing: -5px;
+        margin-left: .4rem;
+    }
+
+    .titulo-markdigital h3{
+        line-height: 6rem;
+    }
+
+    .concept-estrategia p,
+    .concept-diseño p,
+    .concept-markdigital p{
+        font-size: 1.4rem;
+        margin: 0 2rem 0 6rem;
+        font-family: 'Nunito', sans-serif;
+        line-height: 2.2rem;
+        letter-spacing: -1px;
+    }
+
+    .comerciales .title-comerciales .col-10 h3{
+        font-size: 4.5rem;
+        line-height: 7rem;
+        letter-spacing: -5px;
+    }
+    
+    .comerciales .title-comerciales .col-12{
+        padding-left: 5rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 img{
+        width: 3rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 h3{
+        font-size: 4.2rem;
+        letter-spacing: -5px;
+    }
+
+    .contacto{
+        padding: 4rem 0;
+    }
+    
+    .contacto .contactanos .col-12 h3{
+        font-size: 5rem;
+        letter-spacing: -6px;
+        font-family: 'Fjalla One', sans-serif;
+    }
+    
+    .contacto .contactanos .col-12 .row{
+        border: 1px solid white;
+        padding: 1rem 0rem;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacto .contactanos .cuadro .row{
+        width: 80%;
+        margin: 0 5rem;
+    }
+    
+    .row form{
+        display: contents;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .section-1 .title .texto-white h2{
+        font-size: 3.5rem;
+        letter-spacing: -5px;
+    }
+    .section-1 .title .texto-red h2{
+        font-size: 3.5rem;
+        letter-spacing: -5px;
+    }
+    .section-1 .title .texto-red img{
+        width: 2.5rem;
+    }
+    
+    .titulo-services h2{
+        font-size: 4rem;
+        text-align: center;
+        line-height: 4rem;
+        letter-spacing: -7px;
+    }
+    .parrafo-services p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.3rem;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
+    }
+    
+    .parrafo-services p{
+        width: 90%;
+        font-size: 1.4rem;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
+    }
+    .concept-estrategia p,
+    .concept-diseño p,
+    .concept-markdigital p{
+        margin: 0 1rem;
+    }
+
+    .concept-estrategia p,
+    .concept-diseño p,
+    .concept-markdigital p{
+        font-size: 1.4rem;
+        padding: 0 0 1rem 0;
+        line-height: 2.2rem;
+        letter-spacing: -1px;
+    }
+    .footer-services img{
+        width: 50%;
+    }
+
+    .comerciales .title-comerciales .col-10 h3{
+        font-size: 3.5rem;
+        margin: 5rem 0 0rem 2rem;
+        line-height: 7rem;
+        letter-spacing: -5px;
+    }
+    
+    .comerciales .title-comerciales .col-12{
+        padding-left: 2rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 img{
+        width: 2.5rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 h3{
+        font-size: 3rem;
+        letter-spacing: -3px;
+    }
+    .servicios .header{
+        margin: 0;
+    }
+    .row form label{
+        padding: 1rem;
+    }
+    .contacto .contactanos .col-12 .row{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 1rem;
+    }
+    .contacto .contactanos .cuadro .row{
+        width: 80%;
+        margin: 0 5rem;
+    }
+    
+    .row form{
+        display: contents;
+        width: 100%;
+    }
+    .contacto .contactanos .col-12 h3{
+        font-size: 5rem;
+    }
+    .toggler:checked ~ .menu{
+        width: 100%;
+    }
+    .menu >  div > ul{
+        text-align: center;
+        padding-left: 5rem;
+    }
+    .imagen-emociones img{
+        width: 4rem;
+    }
+    .hamburger{
+        width: 30px;
+        height: 30px;
+    }
+    .redes-sociales{
+        right: 45px;
+    }
+    .redes-sociales ul li a i{
+        font-size: 1.5rem;
+    }
+    #hero .toggler{
+        height: 30px;
+        width: 22px;
+        top: 58px;
+        right: 45px; 
+    }
+}
+
+@media (max-width: 576px){
+    .section-1 .title .texto-white h2{
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+    .section-1 .title .texto-red h2{
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+    .section-1 .title .texto-red img{
+        width: 1.8rem;
+    }
+    .section-1 .title .concept{
+        width: 60%;
+    }
+    .section-1 .title .concept p{
+        font-size: 1rem;
+    }
+    .comerciales .title-comerciales .col-10 h3{
+        font-size: 4rem;
+        margin: 2rem 0;
+    }
+
+    .titulo-services h2{
+        font-size: 3.5rem;
+        text-align: center;
+        line-height: 3.5rem;
+        letter-spacing: -5px;
+    }
+    .parrafo-services p{
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
+    }
+
+    .titulo-estrategia img,
+    .titulo-diseño img,
+    .titulo-markdigital img{
+        width: 2.5rem;
+    }
+
+    .titulo-estrategia h3,
+    .titulo-diseño h3,
+    .titulo-markdigital h3{
+        font-size: 3.5rem;
+        padding-top: 1rem;
+        letter-spacing: -4px;
+    }
+    .concept-estrategia p,
+    .concept-diseño p,
+    .concept-markdigital p{
+        margin: 0 .5rem;
+        font-size: 1.4rem;
+        padding: 0 0 1rem 0;
+        line-height: 2.2rem;
+        letter-spacing: -1px;
+    }
+    .titulo-markdigital h3{
+        line-height: 4rem;
+    }
+    .row .estrategia::before,
+    .row .diseño::before,
+    .row .markdigital::before{
+        height: 2px;
+        width: 80%;
+        left: 12%;
+        right: 2%;
+    }
+
+    .footer-services img{
+        width: 45%;
+    }
+
+    .comerciales .title-comerciales .col-10 h3{
+        font-size: 2.5rem;
+        margin: 5rem 0 0rem .5rem;
+        line-height: 4rem;
+        letter-spacing: -4px;
+    }
+    
+    .comerciales .title-comerciales .col-12{
+        padding-left: 2rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 img{
+        width: 1.5rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 h3{
+        font-size: 2.5rem;
+        letter-spacing: -3px;
+    }
+
+    .contacto .contactanos .col-12 h3{
+        font-size: 4rem;
+        letter-spacing: -5px;
+    }
+    
+    .contacto .contactanos .col-12 .row{
+        padding: 1rem 0rem;
+        width: 100%;
+        margin: 0rem 5rem;
+    }
+
+    .contacto .contactanos .cuadro{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row form{
+        display: contents;
+        width: 80%;
+    }
+    .row form button{
+        width: 100%;
+    }
+    input[type='email']{
+        width: 100%;
+    }
+
+    .row form button p{
+        font-size: 1.8rem;
+    }
+    .row form button img{
+        width: 1.5rem;
+    }
+    .imagen-emociones img{
+        width: 3rem;
+    }
+    .hamburger{
+        width: 30px;
+        height: 10px;
+        right: 32px;
+    }
+    .hamburger > div::before,
+    .hamburger > div::after{
+        top: -7px;
+}
+
+    .hamburger > div::after{
+        top: 7px;
+    }
+    .redes-sociales{
+        right: 40px;
+        top: 100px;
+    }
+    .redes-sociales ul li a i{
+        font-size: 1rem;
+    }
+    #hero .toggler{
+        height: 25px;
+        width: 20px;
+        top: 50px;
+        right: 38px; 
+    }
+}

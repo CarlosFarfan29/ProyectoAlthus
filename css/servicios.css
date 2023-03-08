@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+header .banner{
+    background-image: url(../img/Home-fondo-1.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+header .chica-banner{
+    background-image: url(../img/servicios-mujer-1.png);
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.text-banner::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/comilla-abre.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: -30px;
+    width: 3rem;
+    height: 3rem;
+}
+
+.text-banner::after{
+    position: absolute;
+    content: "";
+    background-image: url(../img/comilla-cierre.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    left: 158px;
+    bottom: -40px;
+    width: 3rem;
+    height: 3rem;
+}
+
+header .text-banner{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 72px;
+    color: white;
+    line-height: 1.1;
+    padding-top: 15px;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: -6px;
+    width: 40%;
+}
+
+header .row .chica-banner .texto-chica{
+    position: relative;
+}
+
+header .text-banner .purple{
+    display: block;
+    color: #5819DC;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+header .text-banner .red{
+    display: block;
+    color: #5819DC;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+main, footer{
+    background-color: #282927;
+}
+
+main .title{
+    padding: 3rem 0 1rem 0;
+}
+
+main .title h2{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: -4px;
+    text-align: center;
+}
+
+main .cuerpo{
+    position: relative;
+    width: auto;
+    color: white;
+    padding: 0 4rem;
+}
+
+main .cuerpo .row{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+main .cuerpo .row h3{
+    text-align: end;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 6.5rem;
+    letter-spacing: -9px;
+}
+
+main .cuerpo .row p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    padding-right: 13rem;
+    letter-spacing: -1px;
+}
+
+main .cuerpo .row .purple{
+    color: #5819DC;
+}
+
+/* Footer */
+footer{
+    border-top: 1px solid white;
+    background-color: #282927;
+}
+
+footer .text-footer{
+    padding: 27px 0;
+}
+
+footer .text-footer p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (max-width: 900px){
+    main .cuerpo .row h3{
+        text-align: center;
+    }
+    main .cuerpo .row p{
+        padding: 0;
+        text-align: center;
+    }
+    header .chica-banner{
+        background-size: none;
+    }
+    header .row .col-lg-4 img{
+        width: 8%;
+    }
+    header .row .col-lg-4 p{
+        font-size: 3rem;
+        margin-left: -6rem;
+        width: 14rem;
+    }
+    header .row .col-lg-4 .cierre{
+        margin-left: 5rem;
+    }
+    header .chica-banner{
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px){
+    main .cuerpo .row h3{
+        font-size: 3.8rem;
+        letter-spacing: -4px;
+    }
+    main .cuerpo .row p{
+        font-size: 1.2rem;
+    }
+    main .title h2{
+        font-size: 4rem;
+    }
+    header .chica-banner{
+        background-size: cover;
+    }
+    header .text-banner{
+        font-size: 56px;
+        letter-spacing: -5px;
+    }
+    .text-banner::before{
+        width: 2rem;
+        height: 2rem;
+        top: -25px;
+    }
+    .text-banner::after{
+        width: 2rem;
+        height: 2rem;
+        left: 126px;
+    }
+    header .toggler{
+        height: 30px;
+        width: 22px;
+        top: 58px;
+        right: 45px; 
+    }
+}
+
+@media (max-width: 576px){
+    main .cuerpo .row h3{
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+    main .cuerpo .row p{
+        font-size: 1rem;
+    }
+    footer .text-footer p{
+        font-size: 14px;
+    }
+    header .text-banner{
+        font-size: 40px;
+        letter-spacing: -3px;
+    }
+    .text-banner::before{
+        width: 1.5rem;
+        height: 1.5rem;
+        top: -15px;
+    }
+    .text-banner::after{
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 95px;
+        bottom: -30px;
+    }
+    header .toggler{
+        height: 25px;
+        width: 20px;
+        top: 50px;
+        right: 38px; 
+    }
+    
+}

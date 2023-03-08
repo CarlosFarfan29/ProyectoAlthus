@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+main{
+    background-color: #0F0F0F;
+    width: 100%;
+    height: auto;
+}
+
+.main .title{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    padding: 6rem 0 1rem;
+}
+
+.main .row .title-main{
+    position: relative;
+    margin: auto;
+    padding: 1.6rem 0;
+}
+
+.main .row .title-main h2{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: -2px;
+}
+
+/* CLIENTES */
+
+main .row .clientes-main{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+main .row .clientes-main .row{
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.clientes-main .row .col-sm-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}   
+
+.clientes-main .row img{
+    width: 45%;
+}
+
+/* Footer */
+footer{
+    border-top: 1px solid white;
+    background-color: #5819DC;
+}
+
+footer .text-footer{
+    padding: 27px 0;
+}
+
+footer .text-footer p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Menu */
+header .menu{
+    background: rgb(0, 0, 0, 0.9);
+    width: 0%;
+    height: 200vh;
+    position: fixed;
+    right: 0px;
+    z-index: 9998;
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 768px){
+    header .toggler{
+        height: 30px;
+        width: 22px;
+        top: 58px;
+        right: 45px; 
+    }
+}
+
+@media (max-width: 575px){
+    header .toggler{
+        height: 25px;
+        width: 20px;
+        top: 50px;
+        right: 38px; 
+    }
+}
+
+@media (max-width: 400px){
+    footer .text-footer p{
+        font-size: 14px;
+    }
+    .clientes-main .row img{
+        width: 60%;
+    }
+    header .menu >  div > ul{
+        top: 60px;
+        padding-left: 30px;
+    }
+}
